@@ -1,16 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <SelectGroupComponent/>
+  </div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SelectGroupComponent from "@/components/SelectGroupComponent";
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: {SelectGroupComponent},
 }
 </script>
 
@@ -21,6 +21,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  max-width: 370px;
+  margin: 60px auto 0px auto;
 }
 </style>
